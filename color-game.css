@@ -19,58 +19,12 @@ body:before {
   background-image: -webkit-linear-gradient(top left, rgba(0, 47, 75, 0.75), rgba(221, 66, 36, 0.55));
   background-image: -o-linear-gradient(top left, rgba(0, 47, 75, 0.75), rgba(221, 66, 36, 0.55));
   background-image: linear-gradient(to bottom right, rgba(0, 47, 75, 0.75), rgba(221, 66, 36, 0.55));
-  background-size:auto;
+  background-size: auto;
 }
 
-.heading {
-  color: #fff;
-  margin-top: 5%;
-  text-transform: uppercase;
-}
-
-.container {
-  margin: 20px auto;
-	max-width: 600px;
-}
-
-.container-fluid {
-  padding: 0;
-}
-#optionsBar {
-  background: #fff;
-  color: #394585;
-}
-#colorDisplay {
-  font-size: 220%;
-}
-#message {
-	display: inline-block;
-	width: 20%;
-}
-
-.btn-link {
-  border: none;
-	background: none;
-  outline: none;
-  color: #394585;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-	font-size: inherit;
-  max-height: 100%;
-  -webkit-transition: all 1.0s;
-  -moz-transition: all 1.0s;
-  -o-transition: all 1.0s;
-  transition: all 1.0s;
-  outline: none;
-}
-.btn-link:hover {
-  text-decoration: none;
-  background: #5286ac;
-  color: #fff;
-}
 .square {
   width: 30%;
-  border-radius: 5px;
+  border-radius: 15%;
   padding-bottom: 30%;
   background: #fff;
   float: left;
@@ -79,6 +33,54 @@ body:before {
   -moz-transition: background .5s;
   -o-transition: background .5s;
   transition: background .5s;
+}
+
+.container {
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+.heading {
+  color: #fff;
+  margin-top: 5%;
+  text-transform: uppercase;
+}
+
+#optionsBar {
+  background: #fff;
+  color: #394585;
+}
+
+#colorDisplay {
+  font-size: 200%;
+}
+
+#message {
+  display: inline-block;
+  width: 20%;
+}
+
+.btn-link {
+  border: none;
+  background: none;
+  outline: none;
+  color: #394585;
+  text-transform: uppercase;
+  font-family: 'Righteous', cursive;
+  letter-spacing: 1px;
+  font-size: inherit;
+  max-height: 100%;
+  -webkit-transition: all 1.0s;
+  -moz-transition: all 1.0s;
+  -o-transition: all 1.0s;
+  transition: all 1.0s;
+  outline: none;
+}
+
+.btn-link:hover {
+  text-decoration: none;
+  background: #5286ac;
+  color: #fff;
 }
 
 .selected {
