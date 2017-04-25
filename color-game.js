@@ -34,15 +34,15 @@ function setupSquares() {
     //add click listeners to squares
     squares[i].addEventListener("click", function() {
       //grab color of clicked square
-      var clickedColor = this.style.background;
+      var clickedColor = clickedColor = this.style.backgroundColor;
       //compare color to pickedColor
       if (clickedColor === pickedColor) {
         messageDisplay.textContent = "Yay! You got it!";
-        resetButton.innerHTML = "<i class=\"fa fa-refresh\" aria-hidden=\"true\"></i>Play Again?";
+        resetButton.innerHTML = "<i class=\"fa fa-refresh\" aria-hidden=\"true\"></i> Play Again?";
         changeColors(clickedColor);
-        heading.style.background = clickedColor;
+        heading.style.backgroundColor = clickedColor;
       } else {
-        this.style.background = "transparent";
+        this.style.backgroundColor = "transparent";
         messageDisplay.textContent = "Awww... Try again.";
       }
     });
@@ -61,12 +61,12 @@ function reset() {
   for (var i = 0; i < squares.length; i++) {
     if (colors[i]) {
       squares[i].style.display = "block";
-      squares[i].style.background = colors[i];
+      squares[i].style.backgroundColor = colors[i];
     } else {
       squares[i].style.display = "none";
     }
   }
-  heading.style.background = "transparent";
+  heading.style.backgroundColor = "transparent";
 }
 
 resetButton.addEventListener("click", function() {
@@ -77,7 +77,7 @@ function changeColors(color) {
   //loop through all squares
   for (var i = 0; i < squares.length; i++) {
     //change each color to match given color
-    squares[i].style.background = color;
+    squares[i].style.backgroundColor = color;
   }
 }
 
